@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  output: 'standalone', // Agrega esta línea
+};
 
-export default nextConfig
+export default nextConfig;
