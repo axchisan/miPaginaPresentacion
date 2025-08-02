@@ -20,5 +20,5 @@ COPY --from=builder /app/package*.json ./
 RUN npm ci --production
 # Expone el puerto (por defecto, Next.js usa el 3000)
 EXPOSE 3000
-# Inicia la aplicación
-CMD ["node", "server.js"]
+# Inicia la aplicación con la variable HOST
+CMD ["sh", "-c", "node server.js --host $HOST"]
