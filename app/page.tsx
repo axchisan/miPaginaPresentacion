@@ -70,12 +70,12 @@ export default function Portfolio() {
   }, [services.length])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white overflow-hidden">
       {/* Animated Background */}
       <div className="fixed inset-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-cyan-500/10 to-pink-500/10 animate-pulse"></div>
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-bounce"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-cyan-500/5 to-pink-500/5 animate-pulse"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/3 rounded-full blur-3xl animate-bounce"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/3 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
       {/* Hero Section */}
@@ -85,7 +85,7 @@ export default function Portfolio() {
         >
           {/* Logo/Brand */}
           <div className="relative">
-            <div className="text-8xl md:text-9xl font-black bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+            <div className="text-8xl md:text-9xl font-black bg-gradient-to-r from-slate-400 via-gray-300 to-slate-500 bg-clip-text text-transparent animate-pulse">
               axchi
             </div>
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-cyan-600 to-pink-600 rounded-lg blur opacity-25 animate-pulse"></div>
@@ -93,17 +93,17 @@ export default function Portfolio() {
 
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold">Duvan Yair Arciniegas</h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">Desarrollador de Software </p>
+            <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">Desarrollador de Software</p>
             <div className="flex flex-wrap justify-center gap-2 mt-4">
-              <Badge variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
+              <Badge variant="outline" className="border-slate-500 text-slate-400 hover:bg-purple-500/10">
                 <Sparkles className="w-4 h-4 mr-1" />
                 Estudiante SENA
               </Badge>
-              <Badge variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10">
+              <Badge variant="outline" className="border-gray-500 text-gray-400 hover:bg-cyan-500/10">
                 <Brain className="w-4 h-4 mr-1" />
                 Innovador
               </Badge>
-              <Badge variant="outline" className="border-pink-500 text-pink-400 hover:bg-pink-500/10">
+              <Badge variant="outline" className="border-slate-600 text-slate-500 hover:bg-pink-500/10">
                 <Heart className="w-4 h-4 mr-1" />
                 Apasionado
               </Badge>
@@ -114,7 +114,7 @@ export default function Portfolio() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-slate-700 to-gray-700 hover:from-slate-800 hover:to-gray-800 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               <MessageCircle className="w-5 h-5 mr-2" />
@@ -132,7 +132,7 @@ export default function Portfolio() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
             <ChevronDown className="w-8 h-8 text-gray-400" />
           </div>
         </div>
@@ -141,20 +141,20 @@ export default function Portfolio() {
       {/* About Section */}
       <section className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-slate-400 to-gray-300 bg-clip-text text-transparent">
             Sobre Mí
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+          <div className="grid md:grid-cols-3 gap-12 items-center">
+            <div className="md:col-span-2 space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
                 Soy un apasionado desarrollador de software, actualmente estudiante en el SENA. Me encanta la
                 programación y creo soluciones tecnológicas innovadoras para diferentes negocios.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                En mis tiempos libres disfruto creando juegos y soy un gran amante de la música, especialmente del rock.
-                Trabajo bajo el apodo <span className="text-purple-400 font-semibold">axchi</span>, mi marca personal
-                que representa innovación y creatividad.
+                En mis tiempos libres disfruto creando juegos y soy un gran apasionado por la música. Trabajo bajo el
+                apodo <span className="text-slate-400 font-semibold">axchi</span>, mi marca personal que representa
+                innovación y creatividad en el desarrollo de software.
               </p>
 
               <div className="flex flex-wrap gap-2 mt-6">
@@ -162,7 +162,7 @@ export default function Portfolio() {
                   <Badge
                     key={index}
                     variant="secondary"
-                    className="bg-gray-800 hover:bg-purple-600/20 border border-gray-700 hover:border-purple-500 transition-all duration-300"
+                    className="bg-gray-800 hover:bg-slate-600/20 border border-gray-700 hover:border-slate-500 transition-all duration-300"
                   >
                     {skill}
                   </Badge>
@@ -171,20 +171,31 @@ export default function Portfolio() {
             </div>
 
             <div className="relative">
-              <Card className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border-gray-700 backdrop-blur-sm">
-                <CardContent className="p-8">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-slate-600/20 to-gray-600/20 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <div className="relative">
+                  <img
+                    src="/images/profile.jpg"
+                    alt="Duvan Yair Arciniegas - axchi"
+                    className="w-64 h-64 object-cover rounded-2xl mx-auto border border-gray-700 shadow-2xl"
+                  />
+                </div>
+              </div>
+
+              <Card className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 border-gray-700 backdrop-blur-sm mt-6">
+                <CardContent className="p-6">
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
-                      <Gamepad2 className="w-6 h-6 text-purple-400" />
-                      <span className="text-lg">Desarrollo de Juegos</span>
+                      <Gamepad2 className="w-5 h-5 text-slate-400" />
+                      <span className="text-sm">Desarrollo de Juegos</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <Music className="w-6 h-6 text-cyan-400" />
-                      <span className="text-lg">Amante del Rock</span>
+                      <Music className="w-5 h-5 text-gray-400" />
+                      <span className="text-sm">Apasionado por la Música</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <Code2 className="w-6 h-6 text-pink-400" />
-                      <span className="text-lg">Programación Creativa</span>
+                      <Code2 className="w-5 h-5 text-slate-500" />
+                      <span className="text-sm">Programación Creativa</span>
                     </div>
                   </div>
                 </CardContent>
@@ -197,7 +208,7 @@ export default function Portfolio() {
       {/* Services Section */}
       <section id="services" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-slate-400 to-gray-300 bg-clip-text text-transparent">
             Mis Servicios
           </h2>
 
@@ -205,8 +216,8 @@ export default function Portfolio() {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 border-gray-700 backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:border-purple-500/50 cursor-pointer ${
-                  currentService === index ? "ring-2 ring-purple-500/50 bg-purple-500/10" : ""
+                className={`bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-gray-600 backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:border-purple-500/50 cursor-pointer ${
+                  currentService === index ? "ring-2 ring-purple-500/50 bg-purple-500/20 border-purple-400" : ""
                 }`}
                 onClick={() => setCurrentService(index)}
               >
@@ -220,18 +231,18 @@ export default function Portfolio() {
                   >
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold">{service.title}</h3>
-                  <p className="text-gray-400 text-sm">{service.description}</p>
+                  <h3 className="text-xl font-semibold text-white">{service.title}</h3>
+                  <p className="text-gray-200 text-sm">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <Card className="bg-gradient-to-r from-purple-900/20 to-cyan-900/20 border-purple-500/30 backdrop-blur-sm max-w-2xl mx-auto">
+            <Card className="bg-gradient-to-r from-purple-900/40 to-cyan-900/40 border-purple-500/50 backdrop-blur-sm max-w-2xl mx-auto">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-purple-300">{services[currentService].title}</h3>
-                <p className="text-gray-300 text-lg">{services[currentService].description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-white">{services[currentService].title}</h3>
+                <p className="text-gray-100 text-lg">{services[currentService].description}</p>
               </CardContent>
             </Card>
           </div>
@@ -241,11 +252,11 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-gray-400 to-slate-300 bg-clip-text text-transparent">
             Conectemos
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* WhatsApp */}
             <Card className="bg-gradient-to-br from-green-900/20 to-green-800/20 border-green-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-300 cursor-pointer group">
               <CardContent className="p-8">
@@ -296,6 +307,23 @@ export default function Portfolio() {
                 </Button>
               </CardContent>
             </Card>
+
+            {/* GitHub */}
+            <Card className="bg-gradient-to-br from-gray-900/40 to-black/40 border-gray-500/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 cursor-pointer group">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-gray-600 to-gray-700 rounded-full flex items-center justify-center group-hover:animate-pulse">
+                  <Code2 className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-white">GitHub</h3>
+                <p className="text-gray-300 mb-4">@axchisan</p>
+                <Button
+                  className="bg-gray-700 hover:bg-gray-800 text-white border border-gray-600"
+                  onClick={() => window.open("https://github.com/axchisan", "_blank")}
+                >
+                  Ver Código
+                </Button>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="mt-16">
@@ -307,7 +335,7 @@ export default function Portfolio() {
                 </p>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                  className="bg-gradient-to-r from-slate-700 to-gray-700 hover:from-slate-800 hover:to-gray-800 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
                   onClick={() => window.open("https://w.app/3gmlcp", "_blank")}
                 >
                   <Sparkles className="w-5 h-5 mr-2" />
