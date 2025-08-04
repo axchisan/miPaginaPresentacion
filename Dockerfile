@@ -15,6 +15,8 @@ WORKDIR /app
 # Copia los archivos necesarios del modo standalone
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
+# Copia la carpeta public para los archivos estáticos
+COPY --from=builder /app/public ./public
 # Copia el package.json para instalar dependencias de producción
 COPY --from=builder /app/package*.json ./
 RUN npm ci --production

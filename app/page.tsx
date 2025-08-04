@@ -353,7 +353,7 @@ export default function Portfolio() {
             axchi
           </div>
           <p className="text-gray-400">
-            © 2024 Duvan Yair Arciniegas Gerena. Desarrollando el futuro, una línea de código a la vez.
+            © 2025 Duvan Yair Arciniegas Gerena. Desarrollando el futuro, una línea de código a la vez.
           </p>
         </div>
       </footer>
