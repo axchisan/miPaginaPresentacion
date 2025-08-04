@@ -51,12 +51,11 @@ export default function Portfolio() {
   const skills = [
     "JavaScript",
     "React",
-    "Node.js",
+    "php",
     "Python",
     "Flutter",
     "Next.js",
     "TypeScript",
-    "MongoDB",
     "PostgreSQL",
     "Git",
   ]
@@ -175,7 +174,7 @@ export default function Portfolio() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-slate-600/20 to-gray-600/20 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                 <div className="relative">
                   <img
-                    src="/images/profile.jpg"
+                    src="/public/images/profile.jpg"
                     alt="Duvan Yair Arciniegas - axchi"
                     className="w-64 h-64 object-cover rounded-2xl mx-auto border border-gray-700 shadow-2xl"
                   />
@@ -320,7 +319,7 @@ export default function Portfolio() {
                   className="bg-gray-700 hover:bg-gray-800 text-white border border-gray-600"
                   onClick={() => window.open("https://github.com/axchisan", "_blank")}
                 >
-                  Ver Código
+                  Ver Perfil
                 </Button>
               </CardContent>
             </Card>
