@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Axchisan',
+  title: 'AxchiSan',
   description: 'Created with Axchisan',
   generator: 'Axchisan.dev',
 }
